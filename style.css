@@ -53,6 +53,7 @@
     justify-content: space-between;
     padding:35px;
     font-size: x-large;
+    position: relative;
   }
   nav ul li {
     list-style-type: none;
