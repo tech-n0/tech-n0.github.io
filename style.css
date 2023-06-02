@@ -53,7 +53,6 @@
     justify-content: space-between;
     padding:35px;
     font-size: x-large;
-    position: relative;
   }
   nav ul li {
     list-style-type: none;
@@ -372,7 +371,7 @@ footer li ul a {
   text-align: center;
   font-size: large;
   font-weight: 1000;
-  line-height: 5.9;
+  line-height: auto;
 }
 
 .box-2 {
