@@ -22,18 +22,3 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
-
-
-// Add 'active' class to the clicked navbar item
-navList.addEventListener('click', (event) => {
-    const clickedItem = event.target.closest('li');
-    if (clickedItem) {
-      const activeItem = document.querySelector('nav ul li.active');
-      if (activeItem) {
-        activeItem.classList.remove('active');
-      }
-      clickedItem.classList.add('active');
-    }
-  });
-
-  // end of active nabvar

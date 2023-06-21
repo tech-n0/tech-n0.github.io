@@ -6,6 +6,15 @@
     font-family: 'Ubuntu';
     text-decoration: none;
   }
+/* blog potion */
+#blog {
+  color: black;
+}
+
+#blog a:hover {
+  color: #66bfbf;
+}
+/* blog potion */
 
   .navbar {
     background-image:linear-gradient(
@@ -304,6 +313,10 @@ margin-right:10px;
   color: #f95959;
 }
 
+.subtext a:hover {
+  color: red;
+}
+
 .footer-text {
   padding-top: 10px;
   color: white;
@@ -344,16 +357,6 @@ footer li ul a {
 }
 /* end of footer */
 
-/* TechNo logo 1st page */
-.logo{
-  transition: transform 0.2s ease;
-  cursor: pointer;
-}
-
-.logo:active {
-  transform: scale(0.96);
-}
-/* end of logo */
 
 /* skills column separation */
 /* column separation start*/
@@ -410,3 +413,62 @@ img {
 
 }
 /* column separation end */
+
+/* start of tooltip */
+#tooltip {
+  position: relative;
+  cursor: pointer;
+  border-bottom: 2px dotted;
+  padding-bottom:1px;
+ 
+}
+#tooltip a{
+  color:black;
+}
+
+#tooltip a:hover{
+  color: #66bfbf;
+}
+
+#tooltiptext {
+  position: absolute;
+  left:50%;
+  top:0;
+  transform: transLateX(-50%);
+  background-color: #000;
+  color: white;
+  white-space: nowrap;
+  padding: 5px 5px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#tooltiptext::before {
+    content:"";
+    position: absolute;
+    left:50%;
+    top: 100%;
+    transform:transLateX(-50%);
+    border:15px solid;
+    border-color:#000 #0000 #0000 #0000;
+
+  }
+
+#tooltip:hover #tooltiptext {
+  top:-210%;
+  visibility: visible;
+  opacity:1;
+}
+/* end of tooltip */
+
+/* footer link hover  start*/
+.highlight a {
+  color:#66bfbf;
+}
+
+.highlight a:hover {
+  color:aqua;
+}
+/* footer link hover end */
