@@ -389,7 +389,7 @@ img {
   margin: 0 15px;
   
 }
-@media (max-width:1000px) {
+@media only screen and (max-width:1000px) {
   .columns {
     padding:0px;
     margin: 0px;
@@ -411,6 +411,14 @@ img {
     height:35px;
   }
 
+}
+@media (max-width:800px) {
+  .box-1 {
+    padding: 0px;
+    width: 50vw;
+    font-size:small;
+    line-height:4.1;
+  }
 }
 /* column separation end */
 
