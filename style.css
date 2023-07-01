@@ -212,22 +212,7 @@ font-size: 30px;
 color: greenyellow;
 }
 
-@keyframes text {
-0%{
-  padding:10%;
-  color:white;
-  margin-bottom: -40px;
-}
-30% {
-  padding:10%;
-  letter-spacing: 25px;
-  margin-bottom: -40px;
-}
-85%{
-  letter-spacing: 8px;
-  margin-bottom: -10px;
-}
-}
+
 
 /* first page animation ending */
 
@@ -481,3 +466,10 @@ color:#66bfbf;
 color:aqua;
 }
 /* footer link hover end */
+
+@media (max-width:800px) {
+
+  #tooltiptext{
+    display:none;
+  }
+}
