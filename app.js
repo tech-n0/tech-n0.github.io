@@ -22,3 +22,41 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
+
+
+// Text typing effect
+const content = ["Developer", "Cyber Security Student", "Technical Blogger", "PC Gamer"];
+let part = 0, index = 0, interval;
+
+const element = document.querySelector("#text");
+const cursor = document.querySelector("#cursor");
+
+const type = () => {
+  const text = content[part].slice(0, ++index);
+  element.textContent = text;
+
+  if (text === content[part]) {
+    cursor.style.display = "none";
+    clearInterval(interval);
+    setTimeout(() => (interval = setInterval(erase, 50)), 1000);
+  }
+};
+
+const erase = () => {
+  const text = content[part].slice(0, --index);
+  element.textContent = text;
+
+  if (text === "") {
+    clearInterval(interval);
+    part = (part + 1) % content.length;
+    index = 0;
+
+    setTimeout(() => {
+      cursor.style.display = "inline-block";
+      interval = setInterval(type, 100);
+    }, 200);
+  }
+};
+
+interval = setInterval(type, 100);
+// end
