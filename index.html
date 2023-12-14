@@ -6,34 +6,27 @@
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="img/happy.png">
     <link rel="stylesheet" href="./style.css">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- ham-menu start -->
-        <nav class="navbar">
+                                            <!-- ham-menu start -->
+        <nav class="nav_bar">
             <div class="logo">
                 <h1>tƎchNo.</h1>
             </div>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <div class="openMenu"></div>
             <ul class="mainMenu">
                 <li class="active"><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certs">Certs</a></li>
                 <li><a href="#projects">Project</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <div class="closeMenu"><i class="fa fa-times"></i></div>
-                <span class="icons">
-                    <a href="https://twitter.com/t3ch_no" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://github.com/tech-n0" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://medium.com/@t3ch_no" target="_blank"><i class="fab fa-medium"></i></a>
-                </span>
+                <div class="closeMenu"></div>
             </ul>
         </nav>
-    <script src="./app.js" type="module"></script> <!-- script -->
-    <!-- ham-menu end -->
-    <!-- first page start -->
+    <script src="./app.js" type="module"></script>
+                                                <!-- ham-menu end -->
+                                                <!-- first page start -->
     <div class="container">
     <span class="text1">I'm TechNo</span>
     <div id="container">
@@ -41,90 +34,70 @@
     </div>
     </div>
     
-    <!-- end of first page -->
-    <!-- start of about page -->
+                                                    <!-- end of first page -->
+                                                    <!-- start of about page -->
     <section id="about">
         <div class="about">
         <h2 class="head">About</h2>
         <p>
-        Hello and welcome to my portfolio website!. I am pursuing my BTech IT Cyber Security degree with a passion for learning and discovering new ways to enhance the security of systems and networks.I have earned my <span  id="tooltip"><b>eJPT</b><span id="tooltiptext">ID:6286926</span></a></span> certification from eLearn Security and <span id="tooltip"><b>CAP</b><span id="tooltiptext">ID:7225510</span></span> certification from SecOps .<br><br>
+        Hello and welcome to my portfolio website!. I am pursuing my BTech IT Cyber Security degree with a passion for learning and discovering new ways to enhance the security of systems and networks.I have earned my <span  id="tooltip"><b>eJPT</b><span id="tooltiptext">ID:79630724</span></a></span> certification from eLearn Security, <span id="tooltip"><b>CAP</b><span id="tooltiptext">ID:7225510</span></span> certification and <span id="tooltip"><b>CNSP</b><span id="tooltiptext">ID:8045684</span></span> from SecOps .<br><br>
                     
-        Apart from my studies and hobbies, I like to write<span id="blog"><b><a id="blog" href="https://medium.com/@t3ch_no" target="_blank"> Blogs</a></b></span> about the stuffs I learn.I have also participated in hackathons and attended security conferences.Our team was among the finalist in SIH 2022. These experiences have taught me valuable lessons and deep technical knownledge in modern world and have shaped me into the person I am today.<br><br>
+        Apart from my studies and hobbies, I like to write<span id="blog"><b><a id="blog" href="https://medium.com/@t3ch_no" target="_blank"> Blogs</a></b></span> about the concepts I learn.I actively participate in hackathons and attend security conferences.Our team was among the finalist in SIH 2022. These experiences have taught me valuable lessons and deep technical knownledge in modern world and have shaped me into the person I am today.<br><br>
                     
         I am always looking for new opportunities to learn and grow, and I am open to collaborations and projects that can help me gain hands-on experience in the field of cyber security. Thank you for visiting my portfolio website, and I look forward to connecting with you!<br><br>
     </p>
     </div>
     </section>
     
-    <!-- end of about -->
-    <!-- start of skill page -->
-    <section id="skills">
-        <h2 class="head">Skills</h2>
-        <div class="columns">
-            <div class="box-1">
-                <p>FrontEnd Development</p><br>
-                <p>WebApp Testing</p><br>
-                <p>Development</p><br>
-                <p>BackEnd Development</p><br>
-                <p>Cloud</p><br>
-                <p>Other</p><br>
-            </div>
-            <div class="box-2">
+                                            <!-- end of about -->
+                                            <!-- start of skill page -->
+<section id="certs">
+    <h2 class="head">Certifications</h2>
 
-                <!-- frontend images -->    
-                <img src="./img/bootstrap.svg" alt="bootstrap">
-                <img  src="./img/css.svg" alt="css">
-                <img src="./img/html.svg" alt="HTML">
-                <img src="./img/js.svg" alt="javascript">
-                <img src="./img/git.svg" alt="git">
-                <br><br><hr><br><br>
+    <div class="row">
+        <div class="column order-1 order-lg-1">
+            <img src="img/ejpt.png">
+        </div>
+        <div class="column order-2 order-lg-2">
+            <p>INE Security's eJPT (eLearnSecurity Junior Penetration Tester) certification is tailored for <b>entry-level penetration testers</b>, validating their knowledge, skills, and capabilities for a junior penetration testing role. The exam encompasses key areas such as Assessment Methodologies, Host and Network Auditing, Host and Network Penetration Testing, and Web Application Penetration Testing.</p>
+        </div>
+    </div>
 
-                <!-- WebApp Testing -->
-                <img src="./img/owasp.png" alt="owasp">
-                <img src="./img/burp.jpg" alt="burpsuite">
-                <img src="./img/zap.jpg" alt="zap">
-                <img src="./img/nessus.webp" alt="nessus">
-                <br><br><hr><br><br>
+    <div class="row flex-column-reverse flex-lg-row">
+        <div class="column order-1 order-lg-1">
+            <p>As a Smart India Hackathon 2022 finalist, I excelled in the automatic number plate detection challenge by ingeniously combining machine learning techniques with OpenCV and Keras modules. My innovative solution not only showcased technical excellence but also highlighted my commitment to leveraging advanced technologies for real-world problem-solving.</p>
+        </div>
+        <div class="column order-2 order-lg-2">
+            <img src="img/sih.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column order-1 order-lg-1">
+            <img src="img/cnsp.png">
+        </div>
+        <div class="column order-2 order-lg-2">
+            <p>This is an entry-level exam. It checks the understanding of core fundamentals in relation to network security topics. Candidates should have knowledge of common security misconfigurations, the best security practices, defense-in-depth measures as well as an overview of how vulnerabilities can be exploited in the real world scenario.</p>
+        </div>
+    </div>
 
-                <!-- Development images -->
-                <img src="./img/bash.svg" alt="bash">
-                <img src="./img/js.svg" alt="Js">
-                <img src="./img/python.svg" alt="Python">
-                <img src="./img/vscode.jpg" alt="vscode">
-                <br><br><hr><br><br>
-
-                <!-- backend images -->
-                <img src="./img/mongodb.svg" alt="mongodb">
-                <img src="./img/mysql.svg" alt="mysql">
-                <img src="./img/php.svg" alt="php">
-                <br><br><hr><br><br>
-                
-                <!--Cloud -->
-                <img src="./img/azure.svg" alt="azure">
-                <img src="./img/docker.svg" alt="docker">
-                <br><br><hr><br><br>
-
-                <!-- others -->
-                <img src="./img/linux.svg" alt="linux">
-                <img src="./img/mac.png" alt="mac">
-                <img src="./img/win.png" alt="windows">
-                <img src="./img/Virtualbox_logo.png" alt="virtualbox">
-                <img src="./img/photoshop.svg" alt="photoshop">
-                <img src="./img/metasploit.png" alt="metasploit">
-                <img src="./img/wireshark1.jpg" alt="wireshark">
-                <img src="./img/ad.png" alt="ad">
-                
-            </div>
-    </section>
-<!-- end of skills page -->
-<!-- start of project page -->
+    <div class="row flex-column-reverse flex-lg-row">
+        <div class="column order-1 order-lg-1">
+            <p>This is an intermediate-level course. Attendees should have prior knowledge (both theoretical and practical) of common application security related topics such as the OWASP Top 10 issues, common security misconfigurations, best security practices, defense-in-depth measures as well as an overview of how vulnerabilities can be exploited in the real world scenario.</p>
+        </div>
+        <div class="column order-2 order-lg-2">
+            <img src="img/cap.png">
+        </div>
+    </div>
+</section>
+                                            <!-- end of skills page -->
+                                            <!-- start of project page -->
     <section class="sub-section-alternative" id="projects">
      <h2 class="head">Projects</h2>
         <div class="project-container">
             <div class="project-card">
-                <img class="project-image" src="img/linux-web.png" alt="project images"><br><br>
+                <img class="project-image" src="img/dark-army.png" alt="project images"><br><br>
                 <h3>Linux Theme Portfolio</h3>
-                <p class="subtext">Created a linux themed portfolio website using HTML&CSS</p><br>
+                <p class="subtext">Developed a linux themed portfolio website using javascript with typing effect.</p><br>
                 <hr>
                 <p class="subtext"><a href="https://linux-theme.netlify.app/" target="_blank">View Here</a></p>
             </div>
@@ -132,15 +105,15 @@
             <div class="project-card">
                 <img class="project-image" src="img/og-Number-Plate-Detection.png" alt="project images"><br><br>
                 <h3>Number Plate Detection</h3>
-                <p class="subtext">Machine learning model to find license plate in a vechicle.</p><br>
+                <p class="subtext">Created a automatic number plate detection model using dataset of vechicles and machine learning models.</p><br>
                 <hr>
                 <p class="subtext"><a href="https://github.com/tech-n0/Anpr" target="_blank">View Here</a></p>
             </div>
     
             <div class="project-card">
-                <img class="project-image" src="img/v-scanner.jpg" alt="project images"><br>
+                <img class="project-image" src="img/v-scanner.jpg" alt="project images"><br><br>
                 <h3>Vulnerability Scanner</h3>
-                <p class="subtext">Developed a Python Script to find OWASP Vulnerability in web application.</p><br>
+                <p class="subtext">Developed a Python Script to find cross-site vulnerability in the provided url parameter using wordlists.</p><br>
                 <hr>
                 <p class="subtext"><a href="https://github.com/tech-n0" target="_blank">View Here</a></p>
             </div>
@@ -148,7 +121,7 @@
             <div class="project-card">
                 <img class="project-image" src="img/fuzz.png" alt="project images"><br><br>
                 <h3>Fuzz</h3>
-                <p class="subtext">Simple Python Script to recon Web Application Assets</p><br>
+                <p class="subtext">Python Script which takes a wordlist as input and sends request to server and prints the server response code to the terminal.</p>
                 <hr>
                 <p class="subtext"><a href="https://github.com/tech-n0/fuzz" target="_blank">View Here</a></p>
             </div>
@@ -156,15 +129,15 @@
         </div>
     
     </section>
-    <!-- end of project page -->
-    <!-- start of contact page -->
+                                            <!-- end of project page -->
+                                            <!-- start of contact page -->
     <footer id="contact">
         <div class="footer-text">
             <h3>Contact Me</h3>
             <p class="copyright">&copy;TechNo</p>
         </div>
     
-        <div  class="highlight">
+        <div class="link">
             <ul>
                 <li><a href="https://twitter.com/t3ch_no" target="_blank">Twitter</a></li>
                 <li><a href="https://github.com/tech-n0" target="_blank">Github</a></li>
@@ -173,6 +146,6 @@
         </div>
     
     </footer>
-    <!-- end of contact page -->
+                                    <!-- end of contact page -->
 </body>
 </html>

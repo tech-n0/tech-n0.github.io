@@ -3,7 +3,7 @@
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
-  font-family: 'Ubuntu';
+  font-family: monospace;
   text-decoration: none;
 }
 /* blog potion */
@@ -16,33 +16,36 @@ color: #66bfbf;
 }
 /* blog potion */
 
-.navbar {
+.nav_bar {
   background-image:linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
   ), url(img/geek.png);
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* navbar media start */
 @media only screen and (max-width: 1000px) {
-  .logo {
+.logo {
     display: none;
   }
-.navbar {
 
+.nav_bar {
   background-image:linear-gradient(
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.8)
   ), url(img/logo.png);
-  height: 450px;
+  height: 500px;
+  width: 105vw;
   background-position: center;
   background-size:auto;
 }
 
-.navbar li {
-  list-style-type: none;
+.nav_bar li {
+  display: none;
 }
 
 .openMenu {
@@ -70,7 +73,6 @@ nav ul li {
   position: relative;
 }
 
-
 nav li ul a{
   text-decoration: none;
   font-weight: bold;
@@ -78,11 +80,10 @@ nav li ul a{
 
 /* dont change the below code */
 nav .mainMenu {
-  display: flex;
   list-style: none;
 }
 nav .mainMenu li a {
-  display: inline-block;
+  display:inline-block;
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -101,68 +102,8 @@ nav .openMenu {
   display: none;
   cursor: pointer;
 }
-nav .mainMenu .closeMenu,
-.icons i {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
-}
-.fa-twitter:hover {
- color: rgb(68, 123, 252);
- }
-  .fa-github:hover {
-    color: rgb(106, 105, 105);
-  }
-  .fa-medium:hover {
-    color:white;
-  }
-
-.icons a {
-color: white;
-transition: color 0.3s;
-}
-
-nav .logo {
-  margin: 6px;
-  cursor: pointer;
-}
-
-@media (max-width: 800px) {
-  nav .mainMenu {
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgb(0, 0, 0);
-    transition: top 1s ease 0s;
-    display: none;
-  }
-  nav .mainMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  nav .openMenu {
-    display: block;
-  }
-  nav .mainMenu li a:hover {
-    background: none;
-    color: grey;
-  }
-  .icons i {
-    display: inline-block;
-    padding: 12px;
-  }
- 
-}
 /* dont change the above code */
-/*  */
+
 /* line breaking  */
 hr {
 margin-left:10px;
@@ -187,7 +128,7 @@ width: 100%;
   width:100vw; 
 
 
-  #text {
+#text {
     font-size: x-large;
     color: greenyellow;
     }
@@ -212,6 +153,11 @@ position: relative;
 animation: text 3s 1;
 }
 
+@media only screen and (max-width:1000px) {
+.text1 {
+  padding-top:160px;
+}
+}
 /* first page animation ending */
 
 /* about , project , skills and contact Headings */
@@ -219,12 +165,12 @@ animation: text 3s 1;
 .head {
 text-align: center;
 font-size: xxx-large;
+font-weight: bold;
 color:#FF033E;
 padding-top: 100px;
 padding-bottom: 100px;
 }
 
-/*  css for about */
 .about {
 padding-top: 50px;
 padding-left: 250px;
@@ -241,15 +187,17 @@ line-height: 1.5;
 .head {
   text-align: center;
   font-size: xx-large;
+  font-weight: bold;
   padding:50px;
 }
 .about {
-  padding: 2px;
+  padding: 5px;
   width: 100%;
   position: relative;
   font-size: large;
 }
 }
+/* end of heading and about*/
 /* start of project section */
 /* project display card */
 .project-card {
@@ -263,12 +211,24 @@ margin: 10px;
 display: flex;
 justify-content: space-around;
 }
+.project-container .subtext{
+  font-size: medium;
+}
+
+.project-container h3{
+  font-size: x-large;
+}
+
+/* end of project section*/
 /* mobile view of project */
 @media only screen and (max-width: 1000px) {
 .project-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.project-container .subtext{
+  font-size: medium;
 }
 }
 
@@ -284,7 +244,7 @@ line-height: 2;
 .project-image {
 margin-top: 25px;
 width: 200px;
-height: 200px;
+height: 180px;
 border-radius: 150px;
 }
 
@@ -308,101 +268,107 @@ font-size: large;
 line-height: 1.5;
 }
 
-/* end of project section */
+/* end of mobile view footer section */
 
 /* start of footer  */
-footer {
-background-color: black;
-display: flex;
-justify-content: space-around;
-padding-top: 60px;
-padding-bottom:60px;
-font-size: large;
-}
-
-footer ul li {
-list-style-type: none;
-display: inline-block;
-padding: 30px 20px;
-}
-
-footer li ul a {
-text-decoration: none;
-font-weight: bold;
-}
-
-@media only screen and (max-width: 1000px) {
-footer {
+/* Footer styling */
+#contact {
+  background-color: black;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around; /* Updated property */
+  align-items: center;
 }
+
+.footer-text {
+  margin-bottom: 20px;
+}
+
+.link ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Media query for responsive design */
+@media only screen and (max-width: 800px) {
+  #contact {
+    padding: 40px 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 105vw;
+  }
+
+  .link li {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
 /* end of footer */
 
-
-/* skills column separation */
+/* certification column separation */
 /* column separation start*/
-.columns {
-display: flex;
-padding:50px;
-margin:0px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
+  justify-content: center;
 }
 
-.box-1 {
-padding:0px;
-flex:1;
-height:100vh;
-width: 50vw;
-text-align: center;
-font-size: large;
-font-weight: 1000;
-line-height: 3.1;
+.column {
+  width: 100%;
+  padding-top:10px;
+  padding-right:40px;
+  padding-left:40px;
+  box-sizing: border-box;
 }
 
-.box-2 {
-flex:1;
-height: 100vh;
-width: 50vw;
+.row .column img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
 
-img {
-width: 50px;
-height:50px;
-margin: 0 15px;
-
-}
-@media only screen and (max-width:1000px) {
-.columns {
-  padding:0px;
-  margin: 0px;
-  display:flex;
-  height: 100vh;
-  flex-direction:row;
-}
-.box-1{
-  padding:0px;
-  width: 50vw;
-  font-size:small;
-  line-height: 3.9;
-}
-.box2- {
-  width: 50vw;
-}
-img {
-  margin:0 1px 0 0;
-  width:35px;
-  height:35px;
+.row .column p{
+  font-size: large;
+  line-height: 1.7;
+  padding:50px;
 }
 
+@media only screen and (min-width: 800px) {
+  .column {
+    width: 48%;
+    margin: 1%;
+  }
 }
-@media (max-width:800px) {
-.box-1 {
-  padding: 0px;
-  width: 50vw;
-  font-size:small;
-  line-height:4.1;
-}
+
+@media only screen and (max-width: 800px) {
+  .row .column {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .row .column img {
+    width: 40%;
+  }
+
+  .row .column p{
+    padding:0px;
+    text-align: center;
+  }
 }
 /* column separation end */
 
@@ -456,14 +422,13 @@ opacity:1;
 /* end of tooltip */
 
 /* footer link hover  start*/
-.highlight a {
+.link a {
 color:#66bfbf;
 }
 
-.highlight a:hover {
+.link a:hover {
 color:aqua;
 }
-/* footer link hover end */
 
 @media (max-width:800px) {
 
@@ -471,8 +436,9 @@ color:aqua;
     display:none;
   }
 }
+/* footer link hover end */
 
-/* text-typing css */
+/* text-typing css start */
 
 #container {
 	text-align: center;
@@ -486,4 +452,4 @@ color:aqua;
   font-size: xx-large;
 }
 
-/* end */
+/* text-typing css end */
