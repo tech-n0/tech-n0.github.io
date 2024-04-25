@@ -18,10 +18,10 @@ color: #66bfbf;
 
 .nav_bar {
   background-image:linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url(img/geek.png);
-  width: 100vw;
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ), url(img/2825710.gif);
+  width: auto;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
