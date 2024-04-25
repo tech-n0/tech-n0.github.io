@@ -21,9 +21,11 @@ color: #66bfbf;
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
   ), url(img/2825710.gif);
-  width: auto;
-  height: 100vh;
   display: flex;
+  height: 100vh;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
   flex-wrap: wrap;
 }
 
