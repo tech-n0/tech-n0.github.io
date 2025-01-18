@@ -25,7 +25,7 @@ function close(){
 
 
 // Text typing effect
-const content = ["Developer", "Cyber Security Student", "Technical Blogger", "PC Gamer"];
+const content = ["Scripter", "Security analyst", "Technical Blogger", "PC Gamer"];
 let part = 0, index = 0, interval;
 
 const element = document.querySelector("#text");

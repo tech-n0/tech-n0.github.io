@@ -358,26 +358,34 @@ line-height: 1.5;
   padding:50px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .column {
     width: 48%;
     margin: 1%;
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .row .column {
-    width: 100%;
-    margin: 0 auto;
+@media only screen and (max-width: 1000px) {
+  .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; /* Center the content horizontally */
   }
 
-  .row .column img {
-    width: 40%;
+  .column {
+      width: 100vw;
+      text-align:center; /* Center the text inside the column */
+      padding-left: 55px; /* Add some padding if necessary */
+      margin-bottom: 20px; /* Add margin to separate columns */
   }
 
-  .row .column p{
-    padding:0px;
-    text-align: center;
+  /* Center the images inside columns */
+  .column img {
+      margin: 0 auto; /* Center image horizontally */
+      display: block;
+      max-width: 100%; /* Ensure the image scales well */
+      height: auto;
   }
 }
 /* column separation end */
