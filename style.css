@@ -25,9 +25,9 @@ color: #66bfbf;
 
 .nav_bar {
   background-image:linear-gradient(
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)
-  ), url(img/2825710.gif);
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ), url(img/2825710.webp);
   display: flex;
   height: 100vh;
   background-position:center;
@@ -46,7 +46,7 @@ color: #66bfbf;
   background-image:linear-gradient(
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.8)
-  ), url(img/logo.png);
+  ), url(img/mobile.webp);
   height: 500px;
   width: 105vw;
   background-position: center;
@@ -349,7 +349,7 @@ line-height: 1.5;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 40%;
 }
 
 .row .column p{
@@ -378,14 +378,6 @@ line-height: 1.5;
       text-align:center; /* Center the text inside the column */
       padding-left: 55px; /* Add some padding if necessary */
       margin-bottom: 20px; /* Add margin to separate columns */
-  }
-
-  /* Center the images inside columns */
-  .column img {
-      margin: 0 auto; /* Center image horizontally */
-      display: block;
-      max-width: 100%; /* Ensure the image scales well */
-      height: auto;
   }
 }
 /* column separation end */
@@ -472,3 +464,24 @@ color:aqua;
 }
 
 /* text-typing css end */
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+  
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+   .container .text1{
+    font-size: medium;
+  }
+  #container #text{
+    font-size: medium;
+  }
+}
