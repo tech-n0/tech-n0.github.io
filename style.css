@@ -44,8 +44,8 @@ color: #66bfbf;
 
 .nav_bar {
   background-image:linear-gradient(
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.8)
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
   ), url(img/mobile.webp);
   height: 500px;
   width: 105vw;
